@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comparable.TaskIvanArrayTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-07-12T13:10:44" hostname="DESKTOP-8R9FT51" time="0.028">
+  <properties/>
+  <testcase name="testEmptyArray()" classname="comparable.TaskIvanArrayTest" time="0.016"/>
+  <testcase name="testSameElements()" classname="comparable.TaskIvanArrayTest" time="0.001"/>
+  <testcase name="testBasicCase()" classname="comparable.TaskIvanArrayTest" time="0.0"/>
+  <testcase name="foundMaxSum()" classname="comparable.TaskIvanArrayTest" time="0.001"/>
+  <testcase name="testEvenNumberOfElements()" classname="comparable.TaskIvanArrayTest" time="0.001"/>
+  <testcase name="testFractionalNumbers()" classname="comparable.TaskIvanArrayTest" time="0.001"/>
+  <testcase name="testTwoElements()" classname="comparable.TaskIvanArrayTest" time="0.0"/>
+  <testcase name="testLargeNumbers()" classname="comparable.TaskIvanArrayTest" time="0.0"/>
+  <testcase name="testNegativeNumbers()" classname="comparable.TaskIvanArrayTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
