@@ -54,7 +54,7 @@ public class Main {
             System.out.println("Student not found");
         }
 
-        Group<?> bestGroup = compareGrade(studentDenis, groups);
+        Group<?> bestGroup = findGroupWithHighestAverageGradeForStudent(studentDenis, groups);
         if (bestGroup != null) {
             System.out.println("Group with the highest average grade for student " + studentDenis.getName() + " is: " + bestGroup.getName());
         } else {
@@ -68,18 +68,20 @@ public class Main {
                 .collect(Collectors.toList());
     }
 
-    public static Group<?> compareGrade(Student student, List<Group<?>> groups) {
+    public static Group<?> findGroupWithHighestAverageGradeForStudent(Student student, List<Group<?>> groups) {
         return groups.stream()
                 .filter(group -> group.getGrades().containsKey(student))
                 .max((group1, group2) -> {
-                    double total1 = group1.getGrades().get(student).stream()
+                  double average1 = group1.getGrades().get(student).stream()
                             .mapToDouble(Number::doubleValue)
-                            .sum();
-                    double total2 = group2.getGrades().get(student).stream()
+                            .average()
+                            .orElse(0.0);
+                    double average2 = group2.getGrades().get(student).stream()
                             .mapToDouble(Number::doubleValue)
-                            .sum();
+                            .average()
+                            .orElse(0.0);
 
-                    return Double.compare(total1, total2);
+                    return Double.compare(average1, average2);
                 })
                 .orElse(null);
     }
