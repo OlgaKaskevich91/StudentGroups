@@ -1,7 +1,6 @@
 ### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+.idea/
+*.iml
 
 ### Eclipse ###
 .apt_generated
@@ -27,3 +26,18 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Gradle files ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+### Java class files ###
+*.class
+
+### Log files ###
+*.log
+
+### Other system files ###
+*.swp
