@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bef471ad-ac21-473c-8dce-825542ca427f" name="Changes" comment="task" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ComparableComparator" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleUserHome" value="C:/Gradle/gradle-8.1.1/lib" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="TaskIvanArrayTest.testEmptyArray" />
+    </enabled-run-configurations>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2j8bPvouf9HK8u9tWl4iBGmcBrX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.ComparableTask.executor": "Run",
+    "Application.Task2.executor": "Run",
+    "Application.TaskIvanArray.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build ComparableComparator.executor": "Run",
+    "Gradle.ComparableComparator [:Main.main()].executor": "Run",
+    "Gradle.ComparableComparator [:MainNote.main()].executor": "Run",
+    "Gradle.ComparableComparator [:RecordInANotebook.main()].executor": "Run",
+    "Gradle.ComparableComparator [:test.main()].executor": "Run",
+    "Gradle.TaskIvanArrayTest.executor": "Run",
+    "JUnit.TaskIvanArrayTest.executor": "Run",
+    "JUnit.TaskIvanArrayTest.foundMaxSum.executor": "Run",
+    "JUnit.TaskIvanArrayTest.testBasicCase.executor": "Run",
+    "JUnit.TaskIvanArrayTest.testEmptyArray.executor": "Debug",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Gradle/gradle-8.1.1/lib",
+    "settings.editor.selected.configurable": "editor.reader.mode"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\HomeWork1\Projects it-academy Kaskevich\new\ComparableComparator\src\test\java" />
+      <recent name="D:\Programming\HomeWork1\Projects it-academy Kaskevich\new\ComparableComparator\src\main\java" />
+      <recent name="D:\Programming\HomeWork1\Projects it-academy Kaskevich\new\ComparableComparator\test\comparable" />
+      <recent name="D:\Programming\HomeWork1\Projects it-academy Kaskevich\new\ComparableComparator" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="comparable" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.appGroups.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stationery.Main" />
+      <module name="ComparableComparator.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stationery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="comparable.NoteApp" />
+      <module name="ComparableComparator.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stationery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecordInANotebook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="comparable.RecordInANotebook" />
+      <module name="ComparableComparator.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stationery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="appGroups.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="appGroups.Main" />
+      <module name="ComparableComparator.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="appGroups.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game.test" />
+      <module name="ComparableComparator.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.appGroups.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.NoteApp" />
+        <item itemvalue="Application.RecordInANotebook" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bef471ad-ac21-473c-8dce-825542ca427f" name="Changes" comment="" />
+      <created>1720771631194</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720771631194</updated>
+    </task>
+    <task id="LOCAL-00001" summary="task">
+      <option name="closed" value="true" />
+      <created>1722507603322</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722507603322</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="task" />
+    <option name="LAST_COMMIT_MESSAGE" value="task" />
+  </component>
+</project>
