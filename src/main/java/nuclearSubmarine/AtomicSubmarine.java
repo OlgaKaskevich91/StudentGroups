@@ -2,13 +2,19 @@ package nuclearSubmarine;
 
 public class AtomicSubmarine {
     private String name;
+    private EngineAtomicSub engine;
 
     public AtomicSubmarine(String name) {
         this.name = name;
+        this.engine= new EngineAtomicSub();
     }
 
     public String getName() {
         return name;
+    }
+
+    public void setEngine(EngineAtomicSub engine) {
+        this.engine = engine;
     }
 
     public void setName(String name) {
@@ -16,15 +22,22 @@ public class AtomicSubmarine {
     }
 
 
-    public void startSailing(){
-        System.out.println(name+ " start sailing...");
-        EngineAtomicSub.start();
+    public void startSailing() {
+        System.out.println(name + " start sailing...");
+        engine.start();
     }
 
-private static class EngineAtomicSub {
-    public static void start() {
-        System.out.println("Nuclear submarine engine started.");
+   static class EngineAtomicSub {
+        public void start() {
+            System.out.println("Nuclear submarine engine started.");
+        }
+    }
+
+    public static void main(String[] args) {
+        AtomicSubmarine atomicSubmarine=new AtomicSubmarine("Cleo");
+        atomicSubmarine.startSailing();
+
     }
 }
 
-}
+
