@@ -6,7 +6,7 @@ public class AtomicSubmarine {
 
     public AtomicSubmarine(String name) {
         this.name = name;
-        this.engine= new EngineAtomicSub();
+        this.engine = new EngineAtomicSub();
     }
 
     public String getName() {
@@ -27,17 +27,12 @@ public class AtomicSubmarine {
         engine.start();
     }
 
-   static class EngineAtomicSub {
+    static class EngineAtomicSub {
         public void start() {
             System.out.println("Nuclear submarine engine started.");
         }
     }
 
-    public static void main(String[] args) {
-        AtomicSubmarine atomicSubmarine=new AtomicSubmarine("Cleo");
-        atomicSubmarine.startSailing();
-
-    }
 }
 
 
