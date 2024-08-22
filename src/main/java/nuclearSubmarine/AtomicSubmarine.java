@@ -1,5 +1,6 @@
 package nuclearSubmarine;
 
+
 import java.lang.annotation.*;
 
 @Documented
@@ -15,6 +16,8 @@ import java.lang.annotation.*;
         description = "Torpedo-class nuclear submarine",
         weight = 150000
 )
+
+
 public class AtomicSubmarine {
     private String name;
     private EngineAtomicSub engine;
