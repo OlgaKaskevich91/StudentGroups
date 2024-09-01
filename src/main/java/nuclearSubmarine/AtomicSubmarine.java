@@ -1,22 +1,6 @@
 package nuclearSubmarine;
 
-
-import java.lang.annotation.*;
-
-@Documented
-@Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-@interface SubmarineInfo {
-    String description();
-
-    int weight();
-}
-
-@SubmarineInfo(
-        description = "Torpedo-class nuclear submarine",
-        weight = 150000
-)
-
+@Submarine.SubmarineInfo(description = "Nuclear Submarine", weight = 20000)
 
 public class AtomicSubmarine {
     private String name;
@@ -52,5 +36,4 @@ public class AtomicSubmarine {
     }
 
 }
-
 
