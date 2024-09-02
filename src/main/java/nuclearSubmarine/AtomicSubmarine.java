@@ -1,6 +1,6 @@
 package nuclearSubmarine;
 
-@Submarine.SubmarineInfo(description = "Nuclear Submarine", weight = 20000)
+@SubmarineInfo(description = "Nuclear Submarine", weight = 20000)
 
 public class AtomicSubmarine {
     private String name;
