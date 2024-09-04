@@ -1,5 +1,7 @@
 package nuclearSubmarine;
 
+@SubmarineInfo(description = "Nuclear Submarine", weight = 20000)
+
 public class AtomicSubmarine {
     private String name;
     private EngineAtomicSub engine;
@@ -34,5 +36,4 @@ public class AtomicSubmarine {
     }
 
 }
-
 
