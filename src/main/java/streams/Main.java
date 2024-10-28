@@ -30,14 +30,14 @@ public class Main {
         }
     }
 
-    static Map<String, Integer> countKeywords(BufferedInputStream bufferedInputStream) {
+    public static Map<String, Integer> countKeywords(BufferedInputStream bufferedInputStream) {
         Map<String, Integer> keywordCount = new HashMap<>();
         try {
             byte[] buffer = bufferedInputStream.readAllBytes();
             String content = new String(buffer, StandardCharsets.UTF_8);
-            String cleanContent = content.replaceAll("\\s*\\p{Punct}+\\s*$", "");
-            String[] words = cleanContent.split("\\s");
 
+            String cleanContent = content.replaceAll("//.*|/\\*(?:.|[\\n\\r])*?\\*/", "");
+            String[] words = cleanContent.trim().replaceAll("[^a-zA-Z0-9]+", " ").split("\\s+");
             for (String word : words) {
                 if (KEYWORDS.contains(word)) {
                     keywordCount.merge(word, 1, Integer::sum);
