@@ -26,22 +26,22 @@ public class Main {
             writeKeywordsCount(bufferedWriter, keywordCount);
 
         } catch (IOException e) {
-            System.out.println("Error" + e.getMessage());
+            System.out.println("Processing file error : " + e.getMessage());
         }
     }
 
     public static Map<String, Integer> countKeywords(BufferedReader bufferedReader) {
-        StringBuilder content = new StringBuilder();
+        Map<String, Integer> allWords = new HashMap<>();
         try {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                content.append(line).append("\n");
+                countKeywordsFromString(line)
+                        .forEach((key, value) -> allWords.merge(key, value, Integer::sum));
             }
-
         } catch (IOException e) {
-            System.out.println("Error" + e.getMessage());
+            System.out.println("Read file error: " + e.getMessage());
         }
-        return countKeywordsFromString(content.toString());
+        return allWords;
     }
 
     public static Map<String, Integer> countKeywords(BufferedInputStream bufferedInputStream) {
@@ -50,7 +50,7 @@ public class Main {
             byte[] buffer = bufferedInputStream.readAllBytes();
             content = new String(buffer, StandardCharsets.UTF_8);
         } catch (IOException e) {
-            System.out.println("Error" + e.getMessage());
+            System.out.println("Read file error: " + e.getMessage());
         }
         return countKeywordsFromString(content);
     }
@@ -60,7 +60,7 @@ public class Main {
             try {
                 bufferedWriter.write(key + " : " + value + " \n");
             } catch (IOException e) {
-                System.out.println("Error" + e.getMessage());
+                System.out.println("Write file error: " + e.getMessage());
             }
         });
     }
@@ -71,7 +71,7 @@ public class Main {
             try {
                 bufferedOutputStream.write(line.getBytes(StandardCharsets.UTF_8));
             } catch (IOException e) {
-                System.out.println("Error" + e.getMessage());
+                System.out.println("Write file error: " + e.getMessage());
             }
         });
     }
