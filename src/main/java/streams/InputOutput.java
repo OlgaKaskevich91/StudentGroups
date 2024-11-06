@@ -13,7 +13,8 @@ public class InputOutput {
 
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                bufferedWriter.write(line + "\n");
+                bufferedWriter.write(line);
+                bufferedWriter.newLine();
             }
         } catch (IOException e) {
             System.out.println("Processing file error: " + e.getMessage());
