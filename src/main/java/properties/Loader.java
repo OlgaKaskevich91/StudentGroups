@@ -7,29 +7,28 @@ import java.util.Map;
 public class Loader {
     private final Map<String, String> properties = new HashMap<>();
 
-    public Loader(String filePath) {
+    public Loader(String filePath) throws IOException {
         loadProperties(filePath);
     }
 
-    private void loadProperties(String filePath) {
+    private void loadProperties(String filePath) throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                if (line.contains("=")) {
-                    String[] keyValue = line.split("=");
-                    properties.put(keyValue[0].trim(), keyValue[1].trim());
+                if (!line.isEmpty() && !line.startsWith("#")) {
+                    if (line.contains("=")) {
+                        String[] keyValue = line.split("=");
+                        properties.put(keyValue[0].trim(), keyValue[1].trim());
+                    }
                 }
             }
-        } catch (IOException e) {
-            throw new RuntimeException("Error: failed to upload file " + e.getMessage());
         }
     }
 
     public String getValue(String key) {
-        String value = properties.get(key);
-        if (value == null) {
-            throw new RuntimeException("Key \"" + key + "\" not found in file");
+        if (key == null) {
+            throw new IllegalArgumentException("The key value is empty");
         }
-        return value;
+        return properties.get(key);
     }
 }
