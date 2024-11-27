@@ -1,4 +1,5 @@
 package exceptions;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -6,11 +7,17 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Main {
+
     private static final Path initialPath = Paths.get("D:\\test");
     private static Path currentPath = initialPath;
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        friendMethod();
+        olgaMethod();
+    }
+
+    public static void olgaMethod() {
         try {
             boolean shouldRun = true;
             while (shouldRun) {
@@ -140,6 +147,15 @@ public class Main {
             return null;
         }
     }
-}
 
+    public static void friendMethod() {
+        try {
+            PropertiesLoader loader = new PropertiesLoader("src/main/resources/file.properties");
+            String value = loader.getValue("dbUrl");
+            System.out.println("Value from the file: " + value);
+        } catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
 
